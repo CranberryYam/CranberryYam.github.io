@@ -1,0 +1,69 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body onload="loadView()">
+
+<div class="View">
+<!--
+    <lottie-animation src="https://CranberryYam.github.io/LottieAnim.json" autoplay loop controls>
+    </lottie-animation>
+-->
+<p id="Timer"></p>
+</div>
+
+<script>
+    function loadView() {
+        startTimer();
+    }
+    function startTimer() {
+        var countDownDate = new Date().getTime() + 3*60000;
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("Timer").innerHTML = minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("Timer").innerHTML = "Done";
+            }
+        }, 1000);
+   };
+</script>
+<script src="https://unpkg.com/lottie-wc/dist/lottie.js"></script>
+    
+<style text="text/css">
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color: skyblue;
+    color: skyblue;
+}
+
+.View {
+    position:fixed;
+    height: 100%;
+    width:100%;
+}
+    
+lottie-animation {
+      width: 100%;
+      height: 60;
+    }
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top:0px;
+  color: bisque;
+}
+</style>
+
+
+</body>
+</html>
