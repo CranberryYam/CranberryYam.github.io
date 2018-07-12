@@ -1,7 +1,3 @@
-<!-- <a href="retrotv.usdz" rel="ar">
-    <img src="https://developer.apple.com/arkit/gallery/models/retrotv/retrotv_2x.jpg" alt="" width="250" height="250" data-hires-status="pending">
-</a> -->
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,9 +9,15 @@
   <body>
     <div class="container">
         <div class="row">
-
             <div class="col">
-                    <div class="card" style="width: 20rem;">
+                <div class="FoodListTitle">Subway AR Menu</div>
+           </div>
+        </div>
+
+        <div class="row FoodList">
+
+            <div class="col-lg-4">
+                    <div class="card">
                             <a href="https://firebasestorage.googleapis.com/v0/b/vuejs-firebase-01-7b318.appspot.com/o/retrotv.usdz?alt=media&token=63647701-1408-4b16-87e0-db6572a24261" rel="ar">
                             <img class="card-img-top" src="http://www.subway.com/ns/images/menu/USA/ENG/BlackForest_Ham_594x334.jpg" alt="Card image cap">
                             </a>
@@ -25,8 +27,8 @@
                     </div>
             </div>
 
-            <div class="col">
-                    <div class="card" style="width: 20rem;">
+            <div class="col-lg-4">
+                    <div class="card">
                             <a href="https://firebasestorage.googleapis.com/v0/b/vuejs-firebase-01-7b318.appspot.com/o/retrotv.usdz?alt=media&token=63647701-1408-4b16-87e0-db6572a24261" rel="ar">
                             <img class="card-img-top" src="http://www.subway.com/ns/images/menu/USA/ENG/RPLC_chicken_bacon_ranch.jpg" alt="Card image cap">
                             </a>
@@ -36,8 +38,8 @@
                     </div>
             </div>
 
-            <div class="col">
-                    <div class="card" style="width: 20rem;">
+            <div class="col-lg-4">
+                    <div class="card" >
                             <a href="https://firebasestorage.googleapis.com/v0/b/vuejs-firebase-01-7b318.appspot.com/o/retrotv.usdz?alt=media&token=63647701-1408-4b16-87e0-db6572a24261" rel="ar">
                             <img class="card-img-top" src="http://www.subway.com/ns/images/menu/USA/ENG/RPLC_cold_cut_combo.jpg" alt="Card image cap">
                             </a>
@@ -50,7 +52,18 @@
         </div>
     </div>
     
+<style>
+  .FoodListTitle {
+    font-size:20px;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
 
+</style>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
