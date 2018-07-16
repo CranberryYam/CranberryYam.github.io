@@ -23,7 +23,7 @@
                             </a>
                             <div class="card-body">
                               <h5 class="card-title">The Beyond Burger</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">$14.5</h6>
+                              <h6 class="card-subtitle mb-2 text-muted">$14.50</h6>
                               <p class="card-text">vegan american cheese, sweet pickles, red onions, green leaf, vegan mayo</p>
                               <a href="#" onclick="addToCart()" class="btn btn-info">Add To Cart</a>
                             </div>
@@ -37,7 +37,7 @@
                             </a>
                             <div class="card-body">
                               <h5 class="card-title">Impossible Burger</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">$14.5</h6>
+                              <h6 class="card-subtitle mb-2 text-muted">$11.50</h6>
                               <p class="card-text">american cheese, caramelized onions, dill pickles, green leaf, special sauce,</p>
                               <a href="#" class="btn btn-info">Add To Cart</a>
                             </div>
@@ -51,7 +51,7 @@
                             </a>
                             <div class="card-body">
                               <h5 class="card-title">Supreme Burger</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">$14.5</h6>
+                              <h6 class="card-subtitle mb-2 text-muted">$17.50</h6>
                               <p class="card-text">beef, american cheese, black forest bacon, onion rings, special sauce</p>
                               <a href="#" class="btn btn-info">Add To Cart</a>
                             </div>
@@ -80,7 +80,7 @@
 </style>
 <script>
 function addToCart(){
-    console.log('haha');
+    document.getElementsByClassName('btn').disabled = 'true';
     $('#modal').modal();
 }
 </script>
